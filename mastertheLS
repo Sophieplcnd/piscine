@@ -1,1 +1,1 @@
-ls -t | sed -z 's#[[:space]]#,#g' | sed 's/.$//'
+ls -1 | sed -z 's#[[:space]]#,#g' | sed 's/.$//'
