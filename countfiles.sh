@@ -1,1 +1,1 @@
-ls /etc | wc -l
+ls -l | grep -v ^l | wc -l
