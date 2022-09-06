@@ -1,1 +1,1 @@
-ls -l | grep -v ^l | wc -l
+find . \( -type f -or -type d \) -and \( -not -path "*/.*" \) | wc -l
