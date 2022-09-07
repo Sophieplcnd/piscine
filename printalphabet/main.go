@@ -24,6 +24,7 @@ func main() {
 	z01.PrintRune('s')
 	z01.PrintRune('t')
 	z01.PrintRune('u')
+	z01.PrintRune('v')
 	z01.PrintRune('w')
 	z01.PrintRune('x')
 	z01.PrintRune('y')
