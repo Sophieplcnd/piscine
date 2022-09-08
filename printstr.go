@@ -1,7 +1,9 @@
 package piscine
 
-func PrintStr(s string) {
-	s = "Hello World!"
+import "github.com/01-edu/z01"
 
-	PrintStr("Hello World!")
+func PrintStr(s string) {
+	for b := 0; b < len(s); b++ {
+		z01.PrintRune(rune(s[b]))
+	}
 }
