@@ -9,4 +9,3 @@ func IsAplha(s string) bool {
 	}
 	return true
 }
-fwd
