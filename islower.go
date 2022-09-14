@@ -1,9 +1,9 @@
 package piscine
 
-func IsUpper(s string) bool {
-	letter := []rune(s)
+
+letter := []rune(s)
 	for i := 0; i < len(letter); i++ {
-		if s[i] < 65 || s[i] > 90 {
+		if s[i] < 97 || s[i] > 122 {
 			return false
 		}
 	}
