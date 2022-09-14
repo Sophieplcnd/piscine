@@ -8,3 +8,4 @@ func NRune(s string, n int) rune {
 	}
 	return 0
 }
+dwcfwdrfc
