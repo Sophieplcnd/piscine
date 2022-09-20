@@ -12,5 +12,5 @@ func TrimAtoi(s string) int {
 			aString += string(runes[i])
 		}
 	}
-	return Atoi(aString)
+	return "Atoi"(aString)
 }
