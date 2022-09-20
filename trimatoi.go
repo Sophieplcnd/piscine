@@ -1,16 +1,30 @@
 package piscine
 
 func TrimAtoi(s string) int {
-	runes := []rune(s)
-	aString := ""
-	check := false
-	for i := 0; i < len(runes); i++ {
-		if runes[i] == 45 && !check {
-			aString = "-"
-		} else if runes[i] >= 48 && runes[i] <= 57 {
-			check = true
-			aString += string(runes[i])
+	counter := 0
+	add := true
+	number := false
+	arr := []int{}
+	for _, val := range s {
+		if '0' <= val && val <= '9' {
+			if val == '0' && !number {
+				continue
+			}
+			arr = append(arr, int(val-48))
+			number = true
+			counter++
+		} else if val == '-' && !number {
+			add = false
 		}
 	}
-	return (aString)
+	b := 0
+	c := 1
+	for i := counter - 1; i >= 0; i-- {
+		b += arr[i] * c
+		c *= 10
+	}
+	if !add {
+		b *= -1
+	}
+	return b
 }
