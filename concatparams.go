@@ -1,4 +1,5 @@
 package piscine
+
 func ConcatParams(args []string) string {
 	result := ""
 	for i := range args {
