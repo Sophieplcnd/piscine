@@ -1,4 +1,5 @@
 package piscine
+
 func Rot14(s string) string {
 	rot := []rune(s)
 	for i := 0; i < len(rot); i++ {
